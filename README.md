@@ -24,7 +24,7 @@ Business questions answered:
 
 4. VLOOKUP / data joins across related tables
 
-5. Data cleaning and relational data modeling (orders ↔ customers ↔ products)
+5. XLOOKUP and INDEX/MATCH to join data across three linked tables (orders, customers, products)
 
 6. Dashboard design (single-page, filter-driven layout)
 
@@ -51,8 +51,8 @@ coffeeOrdersData.xlsx:	Raw source data (orders, customers, products) before anal
 
 * Imported and cleaned raw order, customer, and product data.
 
-* Built relationships between the three tables to bring product pricing and customer details into the orders table.
-
+* Used XLOOKUP (for customer name, email, country) and INDEX/MATCH (for product type, roast, size, price) to pull matching data from the customers and products tables into orders, joined on Customer ID and Product ID.
+      
 * Created PivotTables to summarize sales by month, coffee type, customer, and country.
 
 * Built PivotCharts and slicers on top of the PivotTables for interactive filtering.
